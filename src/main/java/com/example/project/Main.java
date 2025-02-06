@@ -396,10 +396,7 @@ public class Main{
     
         for (int count : map.values()) 
         {
-            if (count > max) 
-            {
-                max = count;
-            }
+            max = Math.max(count, max);
         }
     
         if (max == 1 || map.size() == 1) 
